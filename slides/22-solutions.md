@@ -21,6 +21,7 @@ Avoid putting the credentials for HTSlib in a file that Boto3 will use.
 
 - HTSlib will use a config from a third party tool, s3cmd.
 - s3cfg config specified by `HTS_S3_S3CFG`
+- Boto3 does **not** know about nor use this config file.
 
 ## Modify Environment of API Process
 
