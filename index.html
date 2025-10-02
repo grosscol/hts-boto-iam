@@ -109,8 +109,8 @@
 </section>
 
 <section>
-<section id="aws-iam-woes" class="title-slide slide level1">
-<h1>AWS IAM Woes</h1>
+<section id="parts" class="title-slide slide level1">
+<h1>Parts</h1>
 <p>A small issue with IAM when using boto and pysam(htslib)</p>
 <ul>
 <li>AWS IAM</li>
@@ -209,24 +209,14 @@ docs</a></p>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="va">token</span><span class="op">=</span><span class="kw">`</span><span class="ex">curl</span> <span class="at">-X</span> PUT <span class="at">-H</span> <span class="st">&quot;</span><span class="va">$ttl_hdr</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="va">$tok_url</span><span class="st">&quot;</span><span class="kw">`</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="va">tok_hdr</span><span class="op">=</span><span class="st">&quot;X-aws-ec2-metadata-token: </span><span class="va">$token</span><span class="st">&quot;</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="va">role</span><span class="op">=</span><span class="kw">`</span><span class="ex">curl</span> <span class="at">-H</span> <span class="st">&quot;</span><span class="va">$tok_hdr</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="va">$creds_url</span><span class="st">/&quot;</span><span class="kw">`</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="va">expires</span><span class="op">=</span><span class="st">&#39;now&#39;</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">(</span> <span class="ex">curl</span> <span class="at">-H</span> <span class="st">&quot;</span><span class="va">$tok_hdr</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="va">$creds_url</span><span class="st">/</span><span class="va">$role</span><span class="st">&quot;</span> <span class="dt">\</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>      <span class="kw">|</span> <span class="ex">jq</span> <span class="at">-r</span> <span class="st">&quot;</span><span class="dt">\&quot;</span><span class="va">${key1}${key2}${key3}${key4}</span><span class="dt">\&quot;</span><span class="st">&quot;</span> <span class="op">&gt;</span> credentials.new <span class="kw">)</span> <span class="dt">\</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&amp;&amp;</span> <span class="fu">mv</span> <span class="at">-f</span> credentials.new credentials <span class="dt">\</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&amp;&amp;</span> <span class="va">expires</span><span class="op">=</span><span class="kw">`</span><span class="fu">grep</span> expiry_time credentials <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-d</span> <span class="st">&#39; &#39;</span> <span class="at">-f</span> 3-<span class="kw">`</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">test</span> <span class="va">$?</span> <span class="at">-ne</span> 0 <span class="kw">;</span> <span class="cf">then</span> <span class="cf">break</span> <span class="kw">;</span> <span class="cf">fi</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="va">expiry</span><span class="op">=</span><span class="kw">`</span><span class="fu">date</span> <span class="at">-d</span> <span class="st">&quot;</span><span class="va">$expires</span><span class="st"> - 3 minutes&quot;</span> <span class="st">&#39;+%s&#39;</span><span class="kw">`</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="va">now</span><span class="op">=</span><span class="kw">`</span><span class="fu">date</span> <span class="st">&#39;+%s&#39;</span><span class="kw">`</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">test</span> <span class="st">&quot;</span><span class="va">$expiry</span><span class="st">&quot;</span> <span class="at">-gt</span> <span class="st">&quot;</span><span class="va">$now</span><span class="st">&quot;</span> <span class="kw">&amp;&amp;</span> <span class="fu">sleep</span> <span class="va">$((</span>(<span class="va">$expiry</span> <span class="op">-</span> <span class="va">$now</span>) <span class="op">/</span> <span class="dv">2</span><span class="va">))</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sleep</span> 30</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code></pre></div>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="va">expires</span><span class="op">=</span><span class="st">&#39;now&#39;</span></span></code></pre></div>
 </section>
 <section id="service-grabs-ec2-credentials" class="slide level2">
 <h2>Service grabs EC2 Credentials</h2>
 <pre><code>instance=&#39;http://169.254.169.254&#39;
 creds_url=&quot;$instance/latest/meta-data/iam/security-credentials&quot;</code></pre>
 <p>And writes them to a file which gets re-read when credentials are
-needed.</p>
+expired.</p>
 </section>
 <section id="credentials-file" class="slide level2">
 <h2>Credentials File</h2>
@@ -236,9 +226,8 @@ needed.</p>
 <li>Boto3 also reads this environment variable.</li>
 </ul>
 <figure>
-<img data-src="assets/shared_cred.svg" width="250"
-alt="BRAVO Dependencies" />
-<figcaption aria-hidden="true">BRAVO Dependencies</figcaption>
+<img data-src="assets/shared_creds.svg" alt="Shared Credentials" />
+<figcaption aria-hidden="true">Shared Credentials</figcaption>
 </figure>
 </section></section>
 <section>
@@ -253,11 +242,14 @@ alt="BRAVO Dependencies" />
 </section>
 <section id="a-solution" class="slide level2">
 <h2>A Solution</h2>
-<p>Avoid putting the credentials in a file that Boto3 will use.</p>
+<p>Avoid putting the credentials for HTSlib in a file that Boto3 will
+use.</p>
 <ul>
-<li>Boto3 will use instance credentials and reaquire them.<br />
+<li>Boto3 will use instance credentials and reaquire when they
+expire.<br />
 </li>
-<li>HTSlib can continue reading and re-reading from the file.</li>
+<li>HTSlib can continue reading and re-reading from a credentials
+file.</li>
 </ul>
 </section>
 <section id="non-shared-credentials-location" class="slide level2">
@@ -266,6 +258,27 @@ alt="BRAVO Dependencies" />
 <li>HTSlib will use a config from a third party tool, s3cmd.</li>
 <li>s3cfg config specified by <code>HTS_S3_S3CFG</code></li>
 </ul>
+</section>
+<section id="modify-environment-of-api-process" class="slide level2">
+<h2>Modify Environment of API Process</h2>
+<p>Template of BRAVO API systemd service file</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>{<span class="op">%</span> <span class="cf">if</span> is_aws_environment <span class="op">%</span>}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Environment<span class="op">=</span><span class="st">&quot;HTS_S3_S3CFG=</span><span class="sc">{{</span><span class="st">inst_dir</span><span class="sc">}}</span><span class="st">/s3cfg&quot;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>{<span class="op">%</span> endif <span class="op">%</span>}</span></code></pre></div>
+</section>
+<section id="modify-where-htslib-service-writes" class="slide level2">
+<h2>Modify Where HTSLib Service Writes</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-H</span> <span class="st">&quot;</span><span class="va">$tok_hdr</span><span class="st">: </span><span class="va">$token</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="va">$creds_url</span><span class="st">/</span><span class="va">$role</span><span class="st">&quot;</span> <span class="kw">|</span><span class="dt">\</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">jq</span> <span class="at">--raw-output</span> <span class="st">&quot;</span><span class="va">${JQ_SCRIPT}</span><span class="st">&quot;</span> <span class="op">&gt;&gt;</span> <span class="st">&quot;</span><span class="va">${HTS_S3_S3CFG}</span><span class="st">.new&quot;</span></span></code></pre></div>
+</section>
+<section id="result" class="slide level2">
+<h2>Result</h2>
+<figure>
+<img data-src="assets/nonshared_creds.svg"
+alt="Non-Shared Credentials" />
+<figcaption aria-hidden="true">Non-Shared Credentials</figcaption>
+</figure>
 </section></section>
 <section id="end" class="title-slide slide level1">
 <h1>End</h1>

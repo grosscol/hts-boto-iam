@@ -4,7 +4,7 @@ title: AWS IAM Woes
 date: 2025-10-02
 ---
 
-# AWS IAM Woes
+# Parts
 A small issue with IAM when using boto and pysam(htslib)
 
 - AWS IAM

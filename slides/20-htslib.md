@@ -25,16 +25,6 @@ while true; do
     tok_hdr="X-aws-ec2-metadata-token: $token"
     role=`curl -H "$tok_hdr" "$creds_url/"`
     expires='now'
-    ( curl -H "$tok_hdr" "$creds_url/$role" \
-      | jq -r "\"${key1}${key2}${key3}${key4}\"" > credentials.new ) \
-      && mv -f credentials.new credentials \
-      && expires=`grep expiry_time credentials | cut -d ' ' -f 3-`
-    if test $? -ne 0 ; then break ; fi
-    expiry=`date -d "$expires - 3 minutes" '+%s'`
-    now=`date '+%s'`
-    test "$expiry" -gt "$now" && sleep $((($expiry - $now) / 2))
-    sleep 30
-done
 ```
 
 ## Service grabs EC2 Credentials
@@ -43,7 +33,7 @@ done
 instance='http://169.254.169.254'
 creds_url="$instance/latest/meta-data/iam/security-credentials"
 ```
-And writes them to a file which gets re-read when credentials are needed.
+And writes them to a file which gets re-read when credentials are expired.
 
 
 ## Credentials File
@@ -51,6 +41,6 @@ And writes them to a file which gets re-read when credentials are needed.
 - Location controlled by environment variable `AWS_SHARED_CREDENTIALS_FILE`.
 - Boto3 also reads this environment variable.
 
-![BRAVO Dependencies](assets/shared_cred.svg){ width=250px }
+![Shared Credentials](assets/shared_creds.svg)
 
 
