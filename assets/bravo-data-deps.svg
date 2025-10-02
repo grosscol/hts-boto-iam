@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400"
+   height="680"
+   viewBox="-2 -1 106.833 181.61603"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   sodipodi:docname="bravo-data-deps.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="0.52159442"
+     inkscape:cx="-59.433151"
+     inkscape:cy="214.72622"
+     inkscape:window-width="1770"
+     inkscape:window-height="1365"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="62.394716,86.662553"
+       orientation="0,-1"
+       id="guide12"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="-306.03952"
+       y="-410.78345"
+       width="227.20895"
+       height="138.4696"
+       id="rect1" />
+    <rect
+       x="247.38228"
+       y="149.58388"
+       width="279.8623"
+       height="98.986572"
+       id="rect13" />
+    <marker
+       style="overflow:visible"
+       id="marker13"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop"
+       markerWidth="3"
+       markerHeight="7"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="none">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1"
+         d="M 0,4 V -4"
+         id="path13" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="3"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="3"
+       markerHeight="3"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Stop"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop"
+       markerWidth="3"
+       markerHeight="3"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1"
+         d="M 0,4 V -4"
+         id="path23" />
+    </marker>
+    <rect
+       x="139.08469"
+       y="355.01813"
+       width="111.25905"
+       height="57.53072"
+       id="rect9" />
+    <rect
+       x="398.8504"
+       y="338.46967"
+       width="161.15326"
+       height="113.44575"
+       id="rect8" />
+    <rect
+       x="137.37431"
+       y="385.13525"
+       width="235.85947"
+       height="67.193954"
+       id="rect4" />
+    <rect
+       x="240.06464"
+       y="396.8165"
+       width="213.20084"
+       height="103.18179"
+       id="rect3" />
+    <rect
+       x="247.38228"
+       y="149.58388"
+       width="279.8623"
+       height="98.986572"
+       id="rect13-4" />
+    <rect
+       x="247.38228"
+       y="149.58388"
+       width="279.8623"
+       height="98.986572"
+       id="rect13-4-7" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-51.231242,-66.984563)">
+    <path
+       id="path2"
+       style="fill:#bdbcbc;stroke:#000000;stroke-width:0.529167;stroke-linejoin:round;stroke-miterlimit:150;paint-order:fill markers stroke"
+       d="m 100.80573,168.22797 a 40.545242,3.8742876 0 0 0 -40.545326,3.87419 40.545242,3.8742876 0 0 0 40.545326,3.87418 40.545242,3.8742876 0 0 0 40.54533,-3.87418 40.545242,3.8742876 0 0 0 -40.54533,-3.87419 z m -40.400115,4.18941 6.830074,59.24342 c 0.04745,3e-5 0.149869,-4e-5 0.197921,0 -0.0759,0.09 -0.123815,0.18035 -0.14366,0.27078 0.0016,2.11345 15.006696,3.82665 33.51578,3.82664 18.50909,1e-5 33.5142,-1.71319 33.51579,-3.82664 -0.002,-0.0904 -0.032,-0.18067 -0.0899,-0.27078 h 0.19327 l 6.7815,-59.24342 c -1.67995,1.99219 -19.11957,3.55896 -40.40064,3.55896 -21.280172,0 -38.718912,-1.56689 -40.400115,-3.55896 z" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,4.342029,73.941434)"
+       id="text3"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42px;line-height:1.05;font-family:'Latin Modern Sans';-inkscape-font-specification:'Latin Modern Sans Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="240.06445"
+         y="431.71841"
+         id="tspan2"><tspan
+           style="font-style:normal;-inkscape-font-specification:'Latin Modern Sans'"
+           id="tspan1">varmap.gz
+</tspan></tspan><tspan
+         x="240.06445"
+         y="475.81841"
+         id="tspan8"><tspan
+           style="font-style:normal;-inkscape-font-specification:'Latin Modern Sans'"
+           id="tspan4">coverage.gz</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,35.480186,111.98203)"
+       id="text4"
+       style="font-style:normal;font-size:42px;line-height:1.25;font-family:'Latin Modern Sans';-inkscape-font-specification:'Latin Modern Sans Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4);display:inline"><tspan
+         x="137.375"
+         y="424.23677"
+         id="tspan9">pub_vcfs/</tspan></text>
+    <rect
+       style="fill:#bdbcbc;stroke:#000000;stroke-width:0.79375;stroke-linejoin:round;stroke-miterlimit:150;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="rect5"
+       width="103.85682"
+       height="70.930641"
+       x="50.628117"
+       y="77.447464" />
+    <rect
+       style="fill:#bdbcbc;stroke:#000000;stroke-width:0.529167;stroke-linejoin:round;stroke-miterlimit:150;stroke-dasharray:2.11667, 2.11667;stroke-dashoffset:0;paint-order:fill markers stroke"
+       id="rect6"
+       width="47.782928"
+       height="37.218163"
+       x="57.47229"
+       y="111.13281" />
+    <rect
+       style="fill:#bdbcbc;stroke:#000000;stroke-width:0.529167;stroke-linejoin:round;stroke-miterlimit:150;stroke-dasharray:2.11667, 2.11667;stroke-dashoffset:0;paint-order:fill markers stroke"
+       id="rect7"
+       width="42.912418"
+       height="37.236889"
+       x="105.25522"
+       y="111.13281" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,1.9202389,25.57156)"
+       id="text7"
+       style="font-style:italic;font-size:42.6667px;line-height:1.25;font-family:'Latin Modern Sans';-inkscape-font-specification:'Latin Modern Sans Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect8);display:inline"><tspan
+         x="398.84961"
+         y="378.19145"
+         id="tspan11"><tspan
+           style="font-style:normal;-inkscape-font-specification:'Latin Modern Sans'"
+           id="tspan10">pysam </tspan></tspan><tspan
+         x="398.84961"
+         y="431.52482"
+         id="tspan17"><tspan
+           style="font-style:normal;-inkscape-font-specification:'Latin Modern Sans'"
+           id="tspan13">(htslib)</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,26.525648,28.448767)"
+       id="text8"
+       style="font-style:normal;font-size:42.6667px;line-height:1.25;font-family:'Latin Modern Sans';-inkscape-font-specification:'Latin Modern Sans Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect9);display:inline"><tspan
+         x="139.08398"
+         y="394.74027"
+         id="tspan18">boto3</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Triangle);marker-end:url(#Stop)"
+       d="m 81.373122,148.36033 v 11.89828 H 50.69904 l -0.185037,60.65441 9.481818,-0.11586 v 0.11586 0"
+       id="path9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Triangle);marker-end:url(#marker13)"
+       d="m 126.71143,148.3697 v 11.7764 l 27.88501,-0.10597 0.003,31.69098 -8.59271,-0.0675"
+       id="path12"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,3.3145131,45.984729)"
+       id="text13"
+       style="font-style:normal;font-weight:bold;font-size:42.6667px;line-height:1.25;font-family:'Latin Modern Sans';-inkscape-font-specification:'Latin Modern Sans Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13);display:inline"><tspan
+         x="247.38281"
+         y="189.30668"
+         id="tspan19">BRAVO API</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,6.6698558,196.36012)"
+       id="text13-6"
+       style="font-style:italic;font-size:42.6667px;line-height:1.25;font-family:'Latin Modern Sans';-inkscape-font-specification:'Latin Modern Sans Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-4);display:inline"><tspan
+         x="247.38281"
+         y="189.30668"
+         id="tspan20">S3 Bucket</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,11.606071,24.867132)"
+       id="text13-6-3"
+       style="font-style:italic;font-size:42.6667px;line-height:1.25;font-family:'Latin Modern Sans';-inkscape-font-specification:'Latin Modern Sans Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-4-7);display:inline"><tspan
+         x="247.38281"
+         y="189.30668"
+         id="tspan21">EC2 Instance
+</tspan></text>
+  </g>
+</svg>

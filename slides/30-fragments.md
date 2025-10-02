@@ -3,18 +3,7 @@ author: Colin Gross
 title: AWS IAM Woes
 ---
 
-# Seventh Title
+# End
 
-Incremental fragments
+End of Slides
 
-<span class="fragment"> 
-stuff
-</span>
-
-<span class="fragment"> 
-other
-</span>
-
-<span class="fragment"> 
-stuff
-</span>

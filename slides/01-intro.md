@@ -1,16 +1,23 @@
 ---
 author: Colin Gross
 title: AWS IAM Woes
+date: 2025-10-02
 ---
 
-# First Title
-Welcome to the first slide.
+# AWS IAM Woes
+A small issue with IAM when using boto and pysam(htslib)
 
-Display Lab
+- AWS IAM
+- Python Boto3
+- HTSlib
 
-2019-05-21
 
-# Second Title
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Vitae justo eget magna fermentum iaculis. 
+## HTSLib & Boto 
+- HTSLib is the underlying C library for working with VCFs and Tabix indexed files.
+  - Pysam includes HTSlib as a dependency.
+- Boto3 is the Amazon provided python library for using AWS APIs.
+
+## Relevant Stack
+
+![BRAVO Dependencies](assets/bravo-data-deps.svg){ width=250px }
 
